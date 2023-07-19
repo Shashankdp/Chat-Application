@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.main-container{
+   /* border: 2px solid black; */
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.form-container{
+    background-color: #ffffff;;
+    box-shadow: 5px 5px 10px 10px rgba(218 220 230 / 60%);
+    width: 30%;
+    padding: 10px;
+}
+.form-container{
+    /* display: none;   this needs to be removed */
+}
+.input-section{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#username-input{
+    font-size: 20px;
+    padding: 5px;
+}
+#join-btn{
+    width: 40%;
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(20, 121, 128);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+#join-btn:hover{
+    background-color: rgb(2, 83, 89);
+}
+.chatroom-container{
+     /* display: block;   this needs to be go back to none */
+     /* border: 5px solid blue; */
+     margin-top: 0px;
+     display: none;
+     width: 100%;
+     height: 100vh;
+     position: relative;
+} 
+
+.chatroom-header{
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    font-size: 2rem;
+    position: sticky;
+    top: 0;
+}
+
+.messages{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    font-size: 1.5rem;
+}
+
+.message{
+    background-color: #e1e1e1;
+    width: fit-content;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.sent{
+    align-self: flex-end;
+}
+
+.chat-input{
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+}
+#message-input{
+    width: 90%;
+    font-size: 1.5rem;
+}
+#send-btn{
+    width: 6%;
+    font-size: 15px;
+    color: #e1e1e1;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(66, 109, 137)
+}
+
+#send-btn:hover{
+    background-color: rgb(31, 58, 76);
+}
